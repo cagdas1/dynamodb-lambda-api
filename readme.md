@@ -20,7 +20,7 @@ In order to deploy this stack
 Using CURL Command
 
 ### Create an order
-curl --location --request POST 'https://xxxxxx.lambda-url.us-east-1.on.aws/orders/tCinpuxub' \
+curl --location --request POST 'https://xxxxxx.lambda-url.us-east-1.on.aws/orders/' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "name": "John Doe",
@@ -30,25 +30,25 @@ curl --location --request POST 'https://xxxxxx.lambda-url.us-east-1.on.aws/order
 }'
 
 ### Update an Order
-curl --location --request PUT 'https://heic5thmray36rinedg25ispje0kprlo.lambda-url.us-east-1.on.aws/orders/tCinpuxub' \
+curl --location --request PUT 'https://xxxxxx.lambda-url.us-east-1.on.aws/orders/OEQDFz7Xu' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "name": "John Doe",
-    "items": ["Banana", "Apple", "Bread"],
+    "items": ["Banana", "Apple", "Bread", "Olives"],
     "address": "My Adress Information",
     "payment": "Cash"
 }'
 
 ### GET All Orders
-curl --location --request GET 'https://xxxxxx.lambda-url.us-east-1.on.aws/orders/' \
+curl --location --request GET 'https://xxxxxx.lambda-url.us-east-1.on.aws/orders' \
 --header 'Content-Type: application/json' 
 
 ### Get Single Order
-curl --location --request GET 'https://xxxxxx.lambda-url.us-east-1.on.aws/orders/tCinpuxub' \
+curl --location --request GET 'https://xxxxxx.lambda-url.us-east-1.on.aws/orders/OEQDFz7Xu' \
 --header 'Content-Type: application/json'
 
 ### Delete an Order
-curl --location --request DELETE 'https://xxxxxx.lambda-url.us-east-1.on.aws/orders/tCinpuxub' \
+curl --location --request DELETE 'https://xxxxxx.lambda-url.us-east-1.on.aws/orders/OEQDFz7Xu' \
 --header 'Content-Type: application/json'
 
 
