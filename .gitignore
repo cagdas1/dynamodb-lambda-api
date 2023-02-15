@@ -1,0 +1,13 @@
+*.js
+*.d.ts
+*.pem
+.DS_Store
+node_modules
+cdk.context.json
+package-lock.json
+__pycache__
+*~
+.vscode
+node_modules
+.cdk.staging
+cdk.out
