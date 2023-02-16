@@ -16,6 +16,5 @@ const schema = {
       name: {type:"string", minLength: 2, maxLength: 50},
       payment: {type:"string", minLength: 2, maxLength: 10}
     },
-    required: ["items", "address", "name", "payment"],
-    additionalProperties: false
+    required: ["items", "address", "name", "payment"]
   }
